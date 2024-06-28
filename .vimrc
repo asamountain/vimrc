@@ -47,3 +47,14 @@ set updatetime=5000
 
 " Define an autocommand to save the file on CursorHold
 autocmd CursorHold * if &modifiable && &filetype != 'help' | silent! update | endif
+
+" Map <leader>e to add ** at the beginning and end of the line
+nnoremap <leader>e :call AddAsterisks()<CR>
+
+" Function to add ** at the beginning and end of the line
+function! AddAsterisks()
+  " Go to the beginning of the line
+  normal! I**
+  " Go to the end of the line
+  normal! A**
+endfunction
