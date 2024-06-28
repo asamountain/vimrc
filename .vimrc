@@ -14,6 +14,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
+" vin-ingo-library & vim-mark are linked, don't remove it
+Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 
 call plug#end()
