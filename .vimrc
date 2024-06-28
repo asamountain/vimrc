@@ -1,5 +1,5 @@
 " Enable absolute line numbers
-set number
+" set number
 
 " Enable clipboard support
 set clipboard=unnamedplus
@@ -14,6 +14,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
+Plug 'inkarkat/vim-mark'
 
 call plug#end()
 
@@ -58,3 +59,9 @@ function! AddAsterisks()
   " Go to the end of the line
   normal! A**
 endfunction
+
+" Git Auto Push setting
+augroup vimrc_autopush
+  autocmd!
+  autocmd BufWritePost ~/.vimrc call system('cd ~ && git add .vimrc && git commit -m "Update .vimrc" && git push origin main')
+augroup END
