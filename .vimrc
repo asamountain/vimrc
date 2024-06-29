@@ -78,4 +78,7 @@ let g:mark#enable = 1
 
 " Optional: Customize mark highlighting
 let g:mark_highlight = 'Search'
-
+" Optional: Configure vim-mark if needed
+" Enable all marks
+let g:mark#autoMark = 1
+let g:mark#enable = 1
