@@ -17,6 +17,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
 " vin-ingo-library & vim-mark are linked, don't remove it
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
+Plug 'rhysd/vim-grammarous'
 
 call plug#end()
 
