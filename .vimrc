@@ -17,6 +17,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
 " vin-ingo-library & vim-mark are linked, don't remove it
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -76,3 +77,10 @@ let g:mark#enable = 1
 " Optional: Customize mark highlighting
 let g:mark_highlight = 'Search'
 let g:mark#debug = 1
+
+
+" Set the colorscheme
+colorscheme gruvbox
+
+" Ensure true color support
+set termguicolors
