@@ -78,9 +78,8 @@ let g:mark#enable = 1
 let g:mark_highlight = 'Search'
 let g:mark#debug = 1
 
-
 " Set the colorscheme
-colorscheme gruvbox
+colorscheme solarized
 
 " Ensure true color support
 set termguicolors
