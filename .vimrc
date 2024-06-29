@@ -67,3 +67,15 @@ augroup vimrc_autopush
   autocmd!
   autocmd BufWritePost ~/.vimrc call system('cd ~ && git add .vimrc && git commit -m "Update .vimrc" && git push origin main')
 augroup END
+
+" Mark highlighting Basic settings
+syntax on
+filetype plugin indent on
+
+" Enable all marks
+let g:mark#autoMark = 1
+let g:mark#enable = 1
+
+" Optional: Customize mark highlighting
+let g:mark_highlight = 'Search'
+
