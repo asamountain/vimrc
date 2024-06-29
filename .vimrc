@@ -78,4 +78,5 @@ let g:mark#enable = 1
 let g:mark_highlight = 'Search'
 let g:mark#debug = 1
 
-
+" Grammar Check Shortcut
+nmap <leader>g :GrammarousCheck<CR>
