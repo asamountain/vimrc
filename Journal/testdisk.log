@@ -1,0 +1,173 @@
+
+
+Wed Jul 17 10:12:08 2024
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Darwin, kernel 23.6.0 (Darwin Kernel Version 23.6.0: Tue Jun 11 21:06:20 PDT 2024; root:xnu-10063.140.28.501.1~1/RELEASE_ARM64_T8112) arm64
+Compiler: GCC 4.2
+ext2fs lib: none, ntfs lib: none, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+Hard disk list
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO), sector size=4096
+
+Partition table type (auto): None
+Media is opened in read-only.
+Disk /dev/rdisk1 - 524 MB / 500 MiB (RO)
+Partition table type: Mac
+
+Analyse Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO)
+Current partition structure:
+Bad MAC partition, invalid block0 signature
+read_part_mac: bad DPME signature
+SIGINT detected! PhotoRec has been killed.
+
+search_part()
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          2     128001     128000
+This partition ends after the disk limits. (start=2, size=128000, end=128001, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          4     128003     128000
+This partition ends after the disk limits. (start=4, size=128000, end=128003, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          6     128005     128000
+This partition ends after the disk limits. (start=6, size=128000, end=128005, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          8     128007     128000
+This partition ends after the disk limits. (start=8, size=128000, end=128007, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         10     128009     128000
+This partition ends after the disk limits. (start=10, size=128000, end=128009, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         12     128011     128000
+This partition ends after the disk limits. (start=12, size=128000, end=128011, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         14     128013     128000
+This partition ends after the disk limits. (start=14, size=128000, end=128013, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         16     128015     128000
+This partition ends after the disk limits. (start=16, size=128000, end=128015, disk end=128000)
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO)
+Check the hard disk size: HD jumper settings, BIOS detection...
+The hard disk (524 MB / 500 MiB) seems too small! (< 524 MB / 500 MiB)
+The following partitions can't be recovered:
+     Linux                          2     128001     128000
+     Linux                          4     128003     128000
+     Linux                          6     128005     128000
+     Linux                          8     128007     128000
+     Linux                         10     128009     128000
+     Linux                         12     128011     128000
+     Linux                         14     128013     128000
+     Linux                         16     128015     128000
+
+Results
+
+interface_write()
+ 
+No partition found or selected for recovery
+
+interface_write()
+ 
+No partition found or selected for recovery
+
+search_part()
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          2     128001     128000
+This partition ends after the disk limits. (start=2, size=128000, end=128001, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          4     128003     128000
+This partition ends after the disk limits. (start=4, size=128000, end=128003, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          6     128005     128000
+This partition ends after the disk limits. (start=6, size=128000, end=128005, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                          8     128007     128000
+This partition ends after the disk limits. (start=8, size=128000, end=128007, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         10     128009     128000
+This partition ends after the disk limits. (start=10, size=128000, end=128009, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         12     128011     128000
+This partition ends after the disk limits. (start=12, size=128000, end=128011, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         14     128013     128000
+This partition ends after the disk limits. (start=14, size=128000, end=128013, disk end=128000)
+
+recover_APFS: s_blocksize=0
+recover_APFS: s_blocks_count 128000
+recover_APFS: part_size 128000
+     Linux                         16     128015     128000
+This partition ends after the disk limits. (start=16, size=128000, end=128015, disk end=128000)
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO)
+Check the hard disk size: HD jumper settings, BIOS detection...
+The hard disk (524 MB / 500 MiB) seems too small! (< 524 MB / 500 MiB)
+The following partitions can't be recovered:
+     Linux                          2     128001     128000
+     Linux                          4     128003     128000
+     Linux                          6     128005     128000
+     Linux                          8     128007     128000
+     Linux                         10     128009     128000
+     Linux                         12     128011     128000
+     Linux                         14     128013     128000
+     Linux                         16     128015     128000
+
+Results
+
+interface_write()
+ 
+No partition found or selected for recovery
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+TestDisk exited normally.
