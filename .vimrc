@@ -1,5 +1,5 @@
 " Enable absolute line numbers
-" set number
+set number
 
 " Enable clipboard support
 set clipboard=unnamedplus
