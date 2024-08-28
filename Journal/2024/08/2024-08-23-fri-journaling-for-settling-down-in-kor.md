@@ -102,6 +102,28 @@ but yeah what would we need for?
 
 
 seems like creativity needed for being sustainable with the farming. yeah we can creatively think about the pricing as well.
-`
+
+
+Boseong Also seems good to go as well.
+Goheung... to be honest I'm into Goheung.
+because there are some lands as well
+
+so... I think about the Goheung...
+but needs to figure out my simcard as well.
+yeah. I need to receive a sms from south korea. then I can try to call them?
+
+
+hmm....
+so what we figured out?
+Need to 
+
+need to rest in this airport and recharge as well.
+my life anyway, I need to figure out something?
+yeah. what should I figure out?
+I don't really know about this?
+no.
+I already know. I know what I should have to do.
+I need to make more donation or investment-wise.
+
 
 
