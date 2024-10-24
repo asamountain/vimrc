@@ -82,3 +82,7 @@ let g:mark#debug = 1
 
 " Grammar Check Shortcut
 nmap <leader>g :GrammarousCheck<CR>
+
+" FZF Fuzzy File Search Shortcuts
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>f :Rg<CR>
