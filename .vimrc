@@ -20,6 +20,7 @@ Plug 'inkarkat/vim-mark'
 Plug 'rhysd/vim-grammarous'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 
 call plug#end()
 
