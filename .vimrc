@@ -2,7 +2,7 @@
 " set number
 
 " Enable clipboard support
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 " Enable mouse support (optional)
 set mouse=a
