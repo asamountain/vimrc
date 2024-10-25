@@ -25,10 +25,6 @@ Plug 'inkarkat/vim-mark'
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
 
-" Fuzzy Finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-let g:fzf_layout = { 'down': '~40%' }
 
 call plug#end()
 
@@ -86,6 +82,6 @@ let g:mark#debug = 1
 nmap <leader>g :GrammarousCheck<CR>
 
 " FZF Fuzzy File Search Shortcuts
-nnoremap <C-p> :Files<CR>
-nnoremap <leader>f :Rg<CR>
+"nnoremap <C-p> :Files<CR>
+"nnoremap <leader>f :Rg<CR>
 
