@@ -1,6 +1,7 @@
 " Enable absolute line numbers
 set number
 
+" Fzf freezing prevention
 set noswapfile
 
 " Enable clipboard support
