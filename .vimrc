@@ -22,7 +22,7 @@ Plug 'inkarkat/vim-ingo-library'
 
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
-
+Plug 'Exafunction/codeium.vim'
 
 call plug#end()
 
