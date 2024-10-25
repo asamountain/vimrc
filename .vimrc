@@ -27,9 +27,6 @@ Plug 'inkarkat/vim-mark'
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
 
-" Code completion and suggestions
-Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
-
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
