@@ -23,9 +23,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-rg'
 
-
-Plug 'tpope/vim-fugitive'
-
 " Install coc plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Install LSP plugins
