@@ -34,11 +34,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 let g:fzf_layout = { 'down': '~40%' }
 
-" AutoCompletion and LSP
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-
 call plug#end()
 
 " Enable syntax highlighting
