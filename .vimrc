@@ -3,6 +3,7 @@ set number
 
 " Fzf freezing prevention
 set noswapfile
+set maxfuncdepth=1000
 
 " Enable clipboard support
 set clipboard=unnamedplus
