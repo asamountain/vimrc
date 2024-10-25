@@ -20,6 +20,7 @@ Plug 'godlygeek/tabular'
 " Dependency plugins
 Plug 'inkarkat/vim-ingo-library'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
