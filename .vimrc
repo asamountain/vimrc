@@ -14,16 +14,11 @@ set mouse=a
 " Install plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
-" Markdown plugins
-Plug 'godlygeek/tabular'
-
 " Dependency plugins
-Plug 'inkarkat/vim-ingo-library'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " Grammar checking
-Plug 'rhysd/vim-grammarous'
 Plug 'Exafunction/codeium.vim'
 
 call plug#end()
