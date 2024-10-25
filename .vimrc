@@ -21,14 +21,12 @@ Plug 'rhysd/vim-grammarous'
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/vim-rg'
 
 " Install coc plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Install LSP plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
