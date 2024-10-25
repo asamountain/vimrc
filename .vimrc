@@ -15,10 +15,8 @@ set mouse=a
 call plug#begin('~/.vim/plugged')
 
 " Markdown plugins
-Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
 
 " Dependency plugins
 Plug 'inkarkat/vim-ingo-library'
