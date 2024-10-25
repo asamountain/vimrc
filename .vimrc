@@ -16,11 +16,9 @@ call plug#begin('~/.vim/plugged')
 
 " Markdown plugins
 Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
 
 " Dependency plugins
 Plug 'inkarkat/vim-ingo-library'
-Plug 'inkarkat/vim-mark'
 
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
