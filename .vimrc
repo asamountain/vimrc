@@ -1,6 +1,8 @@
 " Enable absolute line numbers
 set number
 
+set noswapfile
+
 " Enable clipboard support
 set clipboard=unnamedplus
 
