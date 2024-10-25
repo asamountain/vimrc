@@ -1,10 +1,6 @@
 " Enable absolute line numbers
 set number
 
-" Fzf freezing prevention
-set noswapfile
-set maxfuncdepth=1000
-
 " Enable clipboard support
 set clipboard=unnamedplus
 
@@ -56,8 +52,6 @@ let g:mark#enable = 1
 let g:mark_highlight = 'Search'
 let g:mark#debug = 1
 
-" Grammar Check Shortcut
-nmap <leader>g :GrammarousCheck<CR>
 
 " FZF Fuzzy File Search Shortcuts
 nnoremap <C-p> :Files<CR>
