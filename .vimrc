@@ -29,23 +29,6 @@ syntax on
 " Enable filetype detection and plugins
 filetype plugin on
 
-" Markdown-specific settings
-let g:vim_markdown_folding_disabled = 1
-let g:mkdp_auto_start = 1
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 0
-let g:mkdp_command_for_global = 1
-let g:mkdp_open_to_the_world = 0
-let g:mkdp_browser = ''
-let g:mkdp_echo_preview_url = 0
-let g:mkdp_browserfunc = ''
-let g:mkdp_markdown_css = ''
-let g:mkdp_highlight_css = ''
-let g:mkdp_port = '8080'
-let g:mkdp_page_title = '「${name}」'
-let g:mkdp_filetypes = ['markdown']
-let g:mkdp_browser = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-
 " AutoSave
 set updatetime=5000
 autocmd CursorHold * if &modifiable && &filetype != 'help' | silent! update | endif
