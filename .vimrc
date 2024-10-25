@@ -19,6 +19,8 @@ Plug 'godlygeek/tabular'
 
 " Dependency plugins
 Plug 'inkarkat/vim-ingo-library'
+Plug 'junegunn/fzf.vim'
+plug 'junegunn/rg.vim'
 
 " Grammar checking
 Plug 'rhysd/vim-grammarous'
