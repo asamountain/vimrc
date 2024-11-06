@@ -59,4 +59,5 @@ let g:mark#debug = 1
 " FZF Fuzzy File Search Shortcuts
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>f :Rg<CR>
+set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 
