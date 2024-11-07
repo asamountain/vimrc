@@ -20,6 +20,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Grammar checking
 Plug 'Exafunction/codeium.vim'
 
+" Autoformat
+Plug 'Chiel92/vim-autoformat'
+
 call plug#end()
 
 " Enable syntax highlighting
