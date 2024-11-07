@@ -50,15 +50,6 @@ augroup vimrc_autopush
   autocmd BufWritePost ~/.vimrc call system('cd ~ && git add .vimrc && git commit -m "Update .vimrc" && git push origin main')
 augroup END
 
-" Enable all marks
-let g:mark#autoMark = 1
-let g:mark#enable = 1
-
-" Customize mark highlighting
-let g:mark_highlight = 'Search'
-let g:mark#debug = 1
-
-
 " FZF Fuzzy File Search Shortcuts
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>f :Rg<CR>
