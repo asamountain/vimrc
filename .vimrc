@@ -51,7 +51,7 @@ function! s:RenameMarkdownFile()
   echom "s:RenameMarkdownFile called"
   let l:line = getline(1)
   echom "First line: " . l:line
-  if l:line =~ '^# .\+' && strlen(matchstr(l:line, '\S\+')) > 2
+  if l:line =~ '^# .\+'
     echom "Title line detected"
     let l:title = s:GetTitleFromContent()
     echom "Extracted title: " . l:title
