@@ -1,6 +1,6 @@
 
 " no swp file
-set noswapfile
+" set noswapfile
 
 " Enable clipboard support
 set clipboard=unnamedplus
