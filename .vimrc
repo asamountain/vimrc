@@ -57,8 +57,12 @@ let g:formatdef_clangformat = '"clang-format"'
 let g:formatters_c = ['clangformat']
 
 " Codeium disable
-augroup codium_disable_for_markdown
-    autocmd!
-    autocmd FileType markdown let b:codium_disable = 1
-augroup END
+if !exists('g:did_load_codmium')
+    if ! &modifiable || &buftype == 'nofile' || &filetype ==# 'markdown'
+        finish
+    endif
+    let g:did_load_codmium = 1
+    " Load Codemium plugin here
+    Plug 'Chiel92/vim-autoformat'
+endif
 
