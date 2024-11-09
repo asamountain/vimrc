@@ -52,7 +52,7 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 
 " Codeium Shortcuts
 nnoremap <leader>ce :CodeiumEnable<CR>
-nnoremap <leader>cc :CodeiumDisable<CR>
+nnoremap <leader>cd :CodeiumDisable<CR>
 
 " Rename markdown file
 autocmd BufWritePost *.md call s:RenameMarkdownFile()
