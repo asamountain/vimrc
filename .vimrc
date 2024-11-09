@@ -50,9 +50,14 @@ autocmd BufWritePost *.md call s:RenameMarkdownFile()
 function! s:RenameMarkdownFile()
   echom "s:RenameMarkdownFile called"
   let l:line = getline(1)
+  echom "First line: " . l:line
   if l:line =~ '^# .\+' && strlen(matchstr(l:line, '\S\+')) > 2
+    echom "Title line detected"
     let l:title = s:GetTitleFromContent()
+    echom "Extracted title: " . l:title
     call s:Rename(s:GetFilename(), l:title . '.md')
+  else
+    echom "No valid title line found"
   endif
 endfunction
 
@@ -60,12 +65,14 @@ function! s:GetTitleFromContent()
   echom "s:GetTitleFromContent called"
   let l:content = getline(1, '$')
   let l:title = matchstr(l:content, '^# \zs.*')
+  echom "Title from content: " . l:title
   return substitute(l:title, ' ', '_', 'g') . '-' . strftime('%Y-%m-%d')
 endfunction
 
 function! s:GetFilename()
   echom "s:GetFilename called"
   let l:file_name = expand('%:t')
+  echom "Current filename: " . l:file_name
   if l:file_name !~ '\.md$'
     return substitute(l:file_name, '\..*$', '.md', '')
   endif
@@ -75,5 +82,6 @@ endfunction
 function! s:Rename(from, to)
   echom "s:Rename called with " . a:from . " to " . a:to
   silent! execute 'rename' a:from a:to
+  echom "File renamed"
 endfunction
 
