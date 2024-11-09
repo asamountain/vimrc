@@ -21,8 +21,8 @@ set updatetime=5000
 autocmd CursorHold * if &modifiable && &filetype != 'help' | silent! update | endif
 
 " Add ** to the beginning and end of the line
-nnoremap <leader>e :call AddAsterisks()<CR>
-function! AddAsterisks()
+nnoremap <leader>e :call s:AddAsterisks()<CR>
+function! s:AddAsterisks()
   " Go to the beginning of the line
   normal! I**
   " Go to the end of the line
@@ -76,5 +76,4 @@ function! s:Rename(from, to)
   echom "s:Rename called with " . a:from . " to " . a:to
   silent! execute 'rename' a:from a:to
 endfunction
-
 
