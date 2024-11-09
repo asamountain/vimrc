@@ -83,7 +83,7 @@ function! s:Rename(from, to)
   echom "s:Rename called with " . a:from . " to " . a:to
   let l:from_path = expand('%:p:h') . '/' . a:from
   let l:to_path = expand('%:p:h') . '/' . a:to
-  silent! execute 'rename' l:from_path l:to_path
+  silent! execute 'silent !mv ' . shellescape(l:from_path) . ' ' . shellescape(l:to_path)
   echom "File renamed"
 endfunction
 
