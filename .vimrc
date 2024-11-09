@@ -63,12 +63,31 @@ let g:codeium_disabled_filetypes = ['markdown']
 nnoremap <leader>cc :CodeiumDisable<CR>
 
 " Rename markdown file
-autocmd BufWrite * :%!s/\(yyyy-mm-dd-\)/\1/g | call rename_markdown_file()
+autocmd BufWrite * :call rename_markdown_file()
 function! rename_markdown_file()
   let l:line = getline('.')
   if matchstr(l:line, '^# (.*)$') == '#' && strlen(matchstr(l:line, '\S+')) > 2
-    let l:title = matchstr(l:line, '^\s*# (.*)$')
-    let l:date = substitute(substitute(matchstr(l:title, '\d{4}-'), '-', ''), '[0-9]\+', '#')
-    call rename(l:title, l:title . '-' . l:date . '.md')
+    let l:title = get_title_from_content()
+    call rename(get_filename(), l:title . '.md')
   endif
 endfunction
+
+function! get_title_from_content()
+  let l:content = getline(0, '$')
+  let l:title_length = strlen(substitute(l:content, '[^#]', '', 'g'))
+  return substitute(matchstr(substitute(l:content, '[^#]', '', 'g'), '\S+'), '[^#]', '', 'g') . 
+'-' . date('%Y-%m-%d')
+endfunction
+
+function! get_filename()
+  let l:file_name = expand('%:t')
+  if matchstr(l:file_name, '\.md$') == ''
+    return substitute(l:file_name, '\..*$', '.md', '')
+  endif
+  return l:file_name
+endfunction
+
+function! rename(from, to)
+  silent! rename $to=$from
+endfunction
+
