@@ -1,6 +1,3 @@
-" Codium Disable when it is freewriting in Markdown
-let g:codium_disabled_filetypes = ['markdown']
-
 " no swp file
 set noswapfile
 
