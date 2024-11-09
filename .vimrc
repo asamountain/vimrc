@@ -1,10 +1,3 @@
-
-" no swp file
-" set noswapfile
-
-" Enable clipboard support
-set clipboard=unnamedplus
-
 " Install plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
