@@ -1,8 +1,6 @@
 " Enable absolute line numbers
 set number
 
-" Disable Codeium
-let g:CodeiumDisable 
 
 " no swp file
 set noswapfile
