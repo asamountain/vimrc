@@ -56,13 +56,8 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 let g:formatdef_clangformat = '"clang-format"'
 let g:formatters_c = ['clangformat']
 
+
 " Codeium disable
-if !exists('g:did_load_codmium')
-    if ! &modifiable || &buftype == 'nofile' || &filetype ==# 'markdown'
-        finish
-    endif
-    let g:did_load_codmium = 1
-    " Load Codemium plugin here
-    Plug 'Chiel92/vim-autoformat'
-endif
+let g:codeium_enabled_filetypes = ['*']
+let g:codeium_disabled_filetypes = ['markdown']
 
