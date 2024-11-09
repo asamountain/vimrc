@@ -60,4 +60,4 @@ let g:formatters_c = ['clangformat']
 " Codeium disable
 let g:codeium_enabled_filetypes = ['*']
 let g:codeium_disabled_filetypes = ['markdown']
-nnoremap <leader>cc :CodeiumToggle<CR>
+nnoremap <leader>cc :CodeiumDisable<CR>
