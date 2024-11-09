@@ -1,6 +1,8 @@
 " Enable absolute line numbers
 set number
 
+set CodeiumDisable 
+
 " no swp file
 set noswapfile
 
