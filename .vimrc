@@ -18,9 +18,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Grammar checking
 Plug 'Exafunction/codeium.vim'
 
-" Autoformat
-Plug 'Chiel92/vim-autoformat'
-
 call plug#end()
 
 " Enable syntax highlighting
@@ -53,14 +50,8 @@ nnoremap <C-p> :Files<CR>
 nnoremap <leader>f :Rg<CR>
 set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 
-" Clang Format
-let g:formatdef_clangformat = '"clang-format"'
-let g:formatters_c = ['clangformat']
-
-
-" Codeium disable
-let g:codeium_enabled_filetypes = ['*']
-let g:codeium_disabled_filetypes = ['markdown']
+" Codeium Shortcuts
+nnoremap <leader>ce :CodeiumEnable<CR>
 nnoremap <leader>cc :CodeiumDisable<CR>
 
 " Rename markdown file
