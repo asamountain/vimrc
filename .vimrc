@@ -55,7 +55,7 @@ function! s:RenameMarkdownFile()
     echom "Title line detected"
     let l:title = s:GetTitleFromContent()
     echom "Extracted title: " . l:title
-    call s:Rename(s:GetFilename(), l:title . '.md')
+    call s:Rename(s:GetFilename(), strftime('%Y-%m-%d') . '-' . l:title . '.md')
   else
     echom "No valid title line found"
   endif
@@ -66,7 +66,7 @@ function! s:GetTitleFromContent()
   let l:content = getline(1, '$')
   let l:title = matchstr(l:content, '^# \zs.*')
   echom "Title from content: " . l:title
-  return substitute(l:title, ' ', '_', 'g') . '-' . strftime('%Y-%m-%d')
+  return substitute(l:title, '\s\+', '-', 'g')
 endfunction
 
 function! s:GetFilename()
