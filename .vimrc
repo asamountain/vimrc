@@ -63,23 +63,26 @@ let g:codeium_disabled_filetypes = ['markdown']
 nnoremap <leader>cc :CodeiumDisable<CR>
 
 " Rename markdown file
-autocmd BufWritePost *.md call RenameMarkdownFile()
+autocmd BufWritePost *.md call s:RenameMarkdownFile()
 
 function! s:RenameMarkdownFile()
+  echom "s:RenameMarkdownFile called"
   let l:line = getline(1)
   if l:line =~ '^# .\+' && strlen(matchstr(l:line, '\S\+')) > 2
     let l:title = s:GetTitleFromContent()
-    call s:Rename(get_filename(), l:title . '.md')
+    call s:Rename(s:GetFilename(), l:title . '.md')
   endif
 endfunction
 
 function! s:GetTitleFromContent()
+  echom "s:GetTitleFromContent called"
   let l:content = getline(1, '$')
   let l:title = matchstr(l:content, '^# \zs.*')
   return substitute(l:title, ' ', '_', 'g') . '-' . strftime('%Y-%m-%d')
 endfunction
 
 function! s:GetFilename()
+  echom "s:GetFilename called"
   let l:file_name = expand('%:t')
   if l:file_name !~ '\.md$'
     return substitute(l:file_name, '\..*$', '.md', '')
@@ -88,6 +91,7 @@ function! s:GetFilename()
 endfunction
 
 function! s:Rename(from, to)
+  echom "s:Rename called with " . a:from . " to " . a:to
   silent! execute 'rename' a:from a:to
 endfunction
 
