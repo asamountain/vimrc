@@ -61,3 +61,14 @@ let g:formatters_c = ['clangformat']
 let g:codeium_enabled_filetypes = ['*']
 let g:codeium_disabled_filetypes = ['markdown']
 nnoremap <leader>cc :CodeiumDisable<CR>
+
+" Rename markdown file
+autocmd BufWrite * :%!s/\(yyyy-mm-dd-\)/\1/g | call rename_markdown_file()
+function! rename_markdown_file()
+  let l:line = getline('.')
+  if matchstr(l:line, '^# (.*)$') == '#' && strlen(matchstr(l:line, '\S+')) > 2
+    let l:title = matchstr(l:line, '^\s*# (.*)$')
+    let l:date = substitute(substitute(matchstr(l:title, '\d{4}-'), '-', ''), '[0-9]\+', '#')
+    call rename(l:title, l:title . '-' . l:date . '.md')
+  endif
+endfunction
