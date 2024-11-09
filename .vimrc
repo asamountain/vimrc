@@ -5,9 +5,6 @@ set noswapfile
 " Enable clipboard support
 set clipboard=unnamedplus
 
-" Enable mouse support (optional)
-set mouse=a
-
 " Install plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
