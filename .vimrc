@@ -55,3 +55,10 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --follow
 " Clang Format
 let g:formatdef_clangformat = '"clang-format"'
 let g:formatters_c = ['clangformat']
+
+" Codeium disable
+augroup codium_disable_for_markdown
+    autocmd!
+    autocmd FileType markdown let b:codium_disable = 1
+augroup END
+
