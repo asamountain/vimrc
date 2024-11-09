@@ -52,6 +52,7 @@ function! s:RenameMarkdownFile()
   let l:line = getline(1)
   if l:line =~ '^# .\+' && strlen(matchstr(l:line, '\S\+')) > 2
     let l:title = s:GetTitleFromContent()
+    echom "title: " . l:title
     call s:Rename(s:GetFilename(), l:title . '.md')
   endif
 endfunction
