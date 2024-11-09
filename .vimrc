@@ -1,6 +1,3 @@
-" Enable absolute line numbers
-set number
-
 " Codium Disable when it is freewriting in Markdown
 let g:codium_disabled_filetypes = ['markdown']
 
